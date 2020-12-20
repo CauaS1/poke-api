@@ -1,0 +1,17 @@
+<%- include("./partials/header.ejs") %>
+  <link rel="stylesheet" href="/styles/index.css">
+
+  <body>
+
+    <div class="container">
+      <% allPokes.forEach(pokes=> { %>
+        <div class="card">
+          <h1>
+            <%= pokes.name %>
+          </h1>
+        </div>
+        <% }) %>
+    </div>
+
+  </body>
+  <%- include("./partials/footer.ejs") %>

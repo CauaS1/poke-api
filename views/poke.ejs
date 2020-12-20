@@ -1,0 +1,22 @@
+<%- include("./partials/header.ejs") %>
+  <link rel="stylesheet" href="/styles/index.css">
+
+  <body>
+
+    <style>
+      .container {
+        width: 90%;
+      }
+    </style>
+
+    <div class="container">
+      <form action="/pokemon" method="POST">
+        <input type="text" name="pokeName" class="search" placeholder="Search for a Pokemon by name">
+        <button type="submit">Search</button>
+      </form>
+    </div>
+
+  </body>
+
+  <!-- <script src="/scripts/valueFromSearch.js"></script> -->
+  <%- include("./partials/footer.ejs") %>

@@ -1,0 +1,40 @@
+<%- include("./partials/header.ejs") %>
+  <link rel="stylesheet" href="/styles/index.css">
+
+  <body>
+
+    <div class="container">
+      <div class="card">
+        <div class="image">
+          <img src="<%= info.sprites.other.dream_world.front_default %>" alt="">
+        </div>
+
+        <h1>
+          <%= info.name %>
+        </h1>
+        <div class="informations">
+          <h1>
+            Type: 
+            <%= info.types[0].type.name %>
+          </h1>
+          <h1>
+            Height:
+            <%= info.height %>
+          </h1>
+
+          <h1>
+            Wieght:
+            <%= info.weight %>
+          </h1>
+          <h1>
+            Move:
+            <%= info.moves[0].move.name %>
+          </h1>
+        </div>
+
+
+      </div>
+    </div>
+
+  </body>
+  <%- include("./partials/footer.ejs") %>
